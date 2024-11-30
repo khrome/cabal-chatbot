@@ -1,0 +1,42 @@
+{
+    "name": "cabal-chatbot",
+    "version": "0.0.1",
+    "type": "commonjs",
+    "main": "src/index.js",
+    "commonjs": "src/index.js",
+    "exports": {
+        ".": {
+            "require": "./src/index.js"
+        }
+    },
+    "homepage": "https://github.com/khrome/cabal-chatbot",
+    "description": "Cabal bot to post ",
+    "keywords": [],
+    "author": "Abbey Hawk Sparrow <khrome>(http://abbeyhawksparrow.com)",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:khrome/cabal-chatbot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/khrome/cabal-chatbot/issues"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "^4.3.7",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.43.0",
+        "husky": "^8.0.3",
+        "mocha": "^10.2.0"
+    },
+    "scripts": {
+        "lint": "eslint src/*.js test/*.js",
+        "test": "mocha test/test.js",
+        "demo": "cross-env CABAL_INSTANCE_URL=cabal://5c6f9a33961f91fbc48e5cba5fccaf017ba7f0aee22a667082057d14c9e07f1c node run.js",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "cabal-bot-core": "^1.0.9",
+        "cabal-client": "^8.0.2"
+    }
+}
