@@ -36,7 +36,6 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "cabal-bot-core": "^1.0.9",
         "cabal-client": "^8.0.2"
     }
 }
